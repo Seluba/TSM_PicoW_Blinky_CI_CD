@@ -23,7 +23,7 @@ static void AppTask(void *pv) {
     #if PL_CONFIG_USE_LEDS
     Leds_Neg(LEDS_ONBOARD);
     #endif
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    vTaskDelay(pdMS_TO_TICKS(500));
     #if PL_CONFIG_USE_GCOV
     if (count>5) {
       vTaskEndScheduler();
